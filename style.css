@@ -1,0 +1,265 @@
+/* Write some CSS below */
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Overpass';
+}
+.banner-commandes {
+  font-size: 14px;
+}
+
+h1, h2, h3 {
+  font-family: 'Chivo';
+}
+
+h1 {
+  color: white;
+  font-size: 46px;
+}
+
+h2 {
+  color: #ae5d2d; 
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+font-size: 22px;
+padding-bottom: 5px;
+}
+
+h4 {
+  color: white;
+  font-size: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+.banner1 {
+  background-position: center;
+  background-size: cover;
+  background-color: #e1d2b8;
+  padding: 15px 0;
+  padding-bottom: 20px;
+  text-align: center;
+  height: 60px;
+}
+
+.banner1 p{
+  font-weight: 100;
+  font-size: 16px;
+  color : black;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+.banner-commandes {
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  padding: 10px 0;
+  text-align: center;
+  height: 15px;
+}
+
+.banner-commandes p{
+  font-weight: 150;
+  font-size: 5px;
+  color : black;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+#logo-marque {
+  width: 120px;
+}
+
+.banner2 {
+  background-image: url(images/background-landingpage.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 200px 0;
+  padding-top: 140px;
+  text-align: center;
+}
+
+.banner2 p{
+  font-weight: 400;
+  font-size: 24px;
+  color : #ffff;
+  margin-bottom: 40px;
+  opacity: 1;
+}
+
+.btn-beige {
+   display: inline-block;
+   margin-right: 12px;
+   background-color: #e1d2b8;
+   color: white;
+   border-radius: 10px;
+   padding: 15px 40px;
+   font-size: 20px;
+   font-weight: 200;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.btn-beige:hover {
+  transform: scale(1.1);
+}
+
+.btn-beige2 {
+   display: inline-block;
+   background-color: #e1d2b8;
+   color: white;
+   border-radius: 10px;
+   margin-top: 20px;
+   padding: 10px 40px;
+   font-size: 15px;
+   font-weight: 200;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.btn-beige2:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+}
+
+.container2 {
+  width: 800px;
+  margin: 20px auto;
+  margin-bottom: 5px;
+}
+
+.card-white {
+  background-color: white;
+  padding: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+  margin: 8px;
+  border-radius: 5px;
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.card-white img:hover{
+  transform: scale(1.1);
+}
+
+.footer {
+  height: 230px;
+  background-color: #819177;
+  color: white;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+.footer p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.list-inline {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 10px; 
+}
+
+.list-inline li {
+  display: inline;
+}
+
+.list-inline i {
+  font-size: 50px;
+  color: #e1d2b8;
+  letter-spacing: 30px;
+}
+
+.list-inline i:hover {
+  opacity: 0.7;
+}
+
+.cards-inline {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; 
+  grid-gap: 16px;
+}
+
+.cards-inline2 {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-gap: 16px;
+}
+
+/* Breaking points */
+@media (max-width: 960px) {
+  .container {
+    width: 900px;
+  }
+  .container2 {
+    width: 800px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .cards-inline2 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 680px;
+  }
+  .container2 {
+    width: 580px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cards-inline2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 480px;
+  }
+  .container2 {
+    width: 380px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr;
+  }
+  .cards-inline2 {
+    grid-template-columns: 1fr;
+  }
+}
+
